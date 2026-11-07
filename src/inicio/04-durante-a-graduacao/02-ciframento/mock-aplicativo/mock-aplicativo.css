@@ -1,0 +1,94 @@
+
+.mock-aplicativo {
+  --tela: #121212;
+  --borda: rgba(255, 255, 255, 0.1);
+  --apagado: rgba(241, 241, 241, 0.38);
+  --acento: var(--color-secondary);
+
+  .janela {
+    position: absolute; width: 880px; height: 600px;
+    border-radius: 16px; overflow: hidden; opacity: 0.7;
+    background: #1b1b1b; border: 1px solid var(--borda);
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6);
+  }
+  .janela .barra { height: 36px; display: flex; align-items: center; gap: 7px; padding: 0 14px; }
+  .janela .barra i { width: 11px; height: 11px; border-radius: 50%; background: rgba(255, 255, 255, 0.18); }
+  .editor {
+    position: absolute; top: 36px; left: 0; right: 0; bottom: 0; background: var(--tela);
+    display: flex; flex-direction: column; font-size: 13px;
+  }
+  .editor header {
+    height: 56px; flex-shrink: 0; display: flex; align-items: center; gap: 14px; padding: 0 20px;
+    border-bottom: 1px solid var(--borda);
+  }
+  .editor header .nome { flex: 1; }
+  .editor header b { display: block; font-size: 15px; font-weight: 600; }
+  .editor header span { font-size: 12px; color: var(--apagado); }
+  .editor .botao { padding: 6px 12px; border-radius: 8px; font-size: 12px; font-weight: 500; color: rgba(241, 241, 241, 0.62); }
+  .editor .botao.principal { background: var(--acento); color: #fff; font-weight: 600; }
+  .colunas { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; }
+  .ver { display: flex; flex-direction: column; min-height: 0; }
+  .abas { display: flex; gap: 6px; padding: 8px 18px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+  .abas span { padding: 7px 10px; font-size: 12px; color: var(--apagado); border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .abas span.ativa { color: var(--color-base-content); font-weight: 500; border-color: var(--acento); }
+
+  .desvios { flex: 1; padding: 18px 28px; overflow: hidden; font-size: 14px; line-height: 1.75; }
+  .desvios .w { display: inline-flex; flex-direction: column; align-items: flex-start; border-radius: 4px; vertical-align: top; }
+  .desvios .w small { font-size: 11px; line-height: 1.2; color: var(--apagado); }
+  .desvios .tocando { background: rgba(168, 85, 247, 0.22); }
+  .desvios .aprox { color: var(--color-warning); }
+  .desvios .nao { color: rgba(241, 241, 241, 0.3); }
+  .desvios .extra { font-size: 12px; color: rgba(56, 189, 248, 0.8); }
+  .desvios .vazia { height: 14px; }
+  .desvios .vezes { margin-left: 6px; font-size: 11px; color: var(--apagado); }
+
+  .tocador { display: flex; align-items: center; gap: 12px; padding: 10px 24px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+  .tocador .play { width: 28px; height: 28px; border-radius: 50%; background: rgba(255, 255, 255, 0.1); display: grid; place-items: center; }
+  .tocador .tempo { font-size: 11px; color: var(--apagado); font-variant-numeric: tabular-nums; }
+  .tocador .trilha { flex: 1; height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.12); position: relative; }
+  .tocador .trilha::before { content: ""; position: absolute; inset: 0 66% 0 0; border-radius: 2px; background: rgba(241, 241, 241, 0.62); }
+  .texto-cifra { background: rgba(255, 255, 255, 0.025); border-left: 1px solid var(--borda); display: flex; flex-direction: column; min-height: 0; }
+  .texto-cifra .topo { display: flex; justify-content: space-between; padding: 14px 24px 4px; font-size: 11px; color: var(--apagado); }
+  .texto-cifra pre { padding: 8px 24px; overflow: hidden; font-size: 11.5px; line-height: 1.65; }
+
+  .celular {
+    position: absolute; width: 380px; height: 720px; border-radius: 56px;
+    background: #1a1a1a; border: 2px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.8), inset 0 0 0 9px #050505;
+    padding: 9px;
+  }
+  .celular .tela { position: relative; width: 100%; height: 100%; border-radius: 48px; overflow: hidden; background: var(--tela); }
+  .celular .ilha {
+    position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+    width: 110px; height: 32px; border-radius: 18px; background: #000; z-index: 3;
+  }
+  .celular .barra-de-status {
+    position: absolute; top: 20px; left: 40px; right: 36px; z-index: 3;
+    display: flex; justify-content: space-between; align-items: center; font-size: 15px; font-weight: 600;
+  }
+  .celular .cabecalho {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 2; padding: 66px 22px 12px;
+    background: var(--tela); border-bottom: 1px solid var(--borda);
+    display: flex; align-items: flex-end; justify-content: space-between;
+  }
+  .celular .cabecalho b { display: block; font-size: 16px; font-weight: 600; }
+  .celular .cabecalho span { font-size: 13px; color: var(--apagado); }
+  .ouvindo { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--acento); }
+  .ouvindo i {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--acento);
+    box-shadow: 0 0 0 5px rgba(168, 85, 247, 0.18); animation: pulso-ouvindo 1.4s ease-in-out infinite;
+  }
+  .celular .area-da-cifra {
+    position: absolute; left: 0; right: 0; top: 118px; bottom: 0; overflow: hidden;
+    mask-image: linear-gradient(to bottom, transparent 0, #000 60px);
+  }
+  .celular .cifra { padding: 0 16px 0 22px; line-height: 1.5; white-space: pre; transition: transform 600ms cubic-bezier(.2, .7, .2, 1); }
+  .celular .secao { margin-top: 0.8em; }
+  .celular .palavra { border-radius: 0.2em; transition: background 120ms, color 120ms; }
+  .celular .palavra.cantada { background: var(--color-base-content); color: var(--color-base-100); }
+
+  .acorde { color: var(--acento); font-weight: 600; }
+  .titulo-da-secao { color: var(--apagado); }
+}
+
+@keyframes pulso-ouvindo { 50% { box-shadow: 0 0 0 9px transparent; } }

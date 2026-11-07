@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "perfil";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: #0f0f0f;
+  --color-base-200: #161616;
+  --color-base-300: #2a2a2a;
+  --color-base-content: #f1f1f1;
+  --color-primary: #ffffff;
+  --color-primary-content: #0f0f0f;
+  --color-secondary: #a855f7;
+  --color-secondary-content: #ffffff;
+  --color-warning: #fbbf24;
+}
+
+@plugin "daisyui/theme" {
+  name: "perfil-claro";
+  color-scheme: light;
+  --color-base-100: #f4f3ef;
+  --color-base-200: #eae8e2;
+  --color-base-300: #d6d3cb;
+  --color-base-content: #141414;
+  --color-primary: #141414;
+  --color-primary-content: #f4f3ef;
+  --color-secondary: #7e22ce;
+  --color-secondary-content: #ffffff;
+  --color-warning: #b45309;
+}
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --color-azul-do-retrato: #1f253a;
+
+  --text-nome-na-abertura: clamp(2.75rem, 1.5rem + 4.2vw, 5.5rem);
+  --text-nome-na-abertura--line-height: 0.98;
+  --text-nome-na-abertura--letter-spacing: -0.04em;
+  --text-titulo-de-secao: clamp(2rem, 1.45rem + 1.7vw, 3rem);
+  --text-titulo-de-secao--line-height: 1.08;
+  --text-titulo-de-secao--letter-spacing: -0.03em;
+  --text-titulo-de-projeto: clamp(1.75rem, 1.45rem + 0.9vw, 2.375rem);
+  --text-titulo-de-projeto--line-height: 1.1;
+  --text-titulo-de-projeto--letter-spacing: -0.025em;
+  --text-numero-em-destaque: clamp(2.5rem, 1.9rem + 1.8vw, 3.5rem);
+  --text-numero-em-destaque--line-height: 1;
+  --text-numero-em-destaque--letter-spacing: -0.04em;
+  --text-destaque: clamp(1.0625rem, 1rem + 0.25vw, 1.25rem);
+  --text-destaque--line-height: 1.55;
+
+  --spacing-margem-da-pagina: clamp(1.25rem, 4vw, 3.5rem);
+  --spacing-secao: clamp(4.5rem, 8vw, 8rem);
+  --spacing-entre-projetos: clamp(4.5rem, 8vw, 7.5rem);
+}
+
+@utility largura-do-conteudo {
+  width: 100%;
+  max-width: 82rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-margem-da-pagina);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+
+  body {
+    background-color: var(--color-base-100);
+    color: var(--color-base-content);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-content);
+  }
+}
+
+@layer components {
+  .cursor-de-texto {
+    display: inline-block;
+    width: 0.07em;
+    height: 0.8em;
+    margin-left: 0.1em;
+    vertical-align: -0.04em;
+    background-color: var(--color-secondary);
+    animation: piscar-cursor-de-texto 1.06s steps(1) infinite;
+  }
+
+  @keyframes piscar-cursor-de-texto {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .cursor-de-texto {
+    animation: none;
+  }
+}
