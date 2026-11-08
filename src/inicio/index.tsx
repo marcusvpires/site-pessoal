@@ -11,7 +11,7 @@ export default function Inicio(): JSX.Element {
   return (
     <>
       <Cabecalho />
-      <main>
+      <main id="conteudo">
         <Abertura />
         <Sobre />
         <DuranteAGraduacao />

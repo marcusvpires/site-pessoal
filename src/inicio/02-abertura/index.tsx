@@ -1,12 +1,9 @@
-import { createSignal, onMount, type JSX } from "solid-js";
+import type { JSX } from "solid-js";
 import ArrowDown from "lucide-solid/icons/arrow-down";
 import MapPin from "lucide-solid/icons/map-pin";
 import { RedesProfissionais } from "../redes-profissionais";
 
 export function Abertura(): JSX.Element {
-  const [fotoRevelada, setFotoRevelada] = createSignal(false);
-  onMount(() => requestAnimationFrame(() => setFotoRevelada(true)));
-
   return (
     <section id="inicio" class="relative isolate flex min-h-svh flex-col overflow-hidden bg-[#0f0f0f] text-[#f1f1f1]">
       <div
@@ -36,14 +33,13 @@ export function Abertura(): JSX.Element {
 
         <img
           src="/fotos/retrato-computador.webp"
+          srcset="/fotos/retrato-computador-800.webp 800w, /fotos/retrato-computador.webp 1100w"
+          sizes="(min-width: 1024px) 34rem, min(26rem, calc(100vw - 2rem))"
           alt="Marcus segurando o notebook aberto no editor de código"
           width="1100"
           height="1320"
           fetchpriority="high"
-          class="mx-auto w-full max-w-[26rem] self-end [transition:clip-path_1.2s_cubic-bezier(.2,.7,.1,1)] motion-reduce:transition-none lg:col-span-5 lg:mr-0 lg:max-w-[34rem]"
-          style={{
-            "clip-path": fotoRevelada() ? "polygon(0 0, 100% 0, 100% 100%, 0 100%)" : "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",
-          }}
+          class="revelar-retrato mx-auto w-full max-w-[26rem] self-end lg:col-span-5 lg:mr-0 lg:max-w-[34rem]"
         />
       </div>
 

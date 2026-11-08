@@ -17,7 +17,7 @@ export function Competencias(): JSX.Element {
       <div class="largura-do-conteudo">
         <h2 class="text-titulo-de-secao font-medium">Competências</h2>
 
-        <div class="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 [&_h3]:mb-5 [&_h3]:text-base-content/50 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_svg]:size-[1em] [&_svg]:shrink-0 [&_ul]:space-y-3 [&_ul]:text-lg">
+        <div class="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 [&_h3]:mb-5 [&_h3]:text-base-content/65 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_svg]:size-[1em] [&_svg]:shrink-0 [&_ul]:space-y-3 [&_ul]:text-lg">
           <div>
             <h3>Software</h3>
             <ul>

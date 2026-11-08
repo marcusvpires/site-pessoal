@@ -2,7 +2,7 @@ import type { JSX } from "solid-js";
 
 export function TrabalhosApresentados(): JSX.Element {
   return (
-    <table class="w-full text-left text-[0.95rem] [&_a]:text-base-content/70 [&_a]:underline [&_a]:decoration-base-content/25 [&_a]:underline-offset-4 [&_a]:transition-colors [&_a:hover]:text-secondary [&_td]:border-t [&_td]:border-base-300 [&_td]:py-3.5 [&_td]:pr-6 [&_td]:align-top [&_th]:pr-6 [&_th]:pb-3 [&_th]:font-normal [&_th]:text-base-content/50">
+    <table class="w-full text-left text-[0.95rem] [&_a]:text-base-content/70 [&_a]:underline [&_a]:decoration-base-content/25 [&_a]:underline-offset-4 [&_a]:transition-colors [&_a:hover]:text-secondary [&_td]:border-t [&_td]:border-base-300 [&_td]:py-3.5 [&_td]:pr-6 [&_td]:align-top [&_th]:pr-6 [&_th]:pb-3 [&_th]:font-normal [&_th]:text-base-content/65">
       <caption class="mb-5 text-left text-destaque">Trabalhos apresentados</caption>
       <thead>
         <tr>
@@ -17,7 +17,7 @@ export function TrabalhosApresentados(): JSX.Element {
           <td class="tabular-nums">2026</td>
           <td>
             XXXI SICITE
-            <span class="block text-base-content/55 sm:hidden">1º autor, apresentador</span>
+            <span class="block text-base-content/65 sm:hidden">1º autor, apresentador</span>
           </td>
           <td class="hidden sm:table-cell">1º autor, apresentador</td>
           <td class="text-right">
@@ -28,7 +28,7 @@ export function TrabalhosApresentados(): JSX.Element {
           <td class="tabular-nums">2025</td>
           <td>
             XXV International Symposium on Solid State Dosimetry
-            <span class="block text-base-content/55 sm:hidden">2º autor, apresentador</span>
+            <span class="block text-base-content/65 sm:hidden">2º autor, apresentador</span>
           </td>
           <td class="hidden sm:table-cell">2º autor, apresentador</td>
           <td class="text-right">
@@ -39,7 +39,7 @@ export function TrabalhosApresentados(): JSX.Element {
           <td class="tabular-nums">2025</td>
           <td>
             SEI-SICITE
-            <span class="block text-base-content/55 sm:hidden">1º autor, apresentador</span>
+            <span class="block text-base-content/65 sm:hidden">1º autor, apresentador</span>
           </td>
           <td class="hidden sm:table-cell">1º autor, apresentador</td>
           <td class="text-right">
@@ -50,7 +50,7 @@ export function TrabalhosApresentados(): JSX.Element {
           <td class="tabular-nums">2025</td>
           <td>
             SEI-SICITE, dois trabalhos
-            <span class="block text-base-content/55 sm:hidden">2º autor</span>
+            <span class="block text-base-content/65 sm:hidden">2º autor</span>
           </td>
           <td class="hidden sm:table-cell">2º autor</td>
           <td class="text-right whitespace-nowrap">

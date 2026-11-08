@@ -16,7 +16,7 @@ export function Ciframento(): JSX.Element {
     <article id="ciframento" class="bg-base-200 py-secao">
       <div class="largura-do-conteudo grid items-center gap-x-10 gap-y-14 lg:grid-cols-12">
         <div class="lg:col-span-6">
-          <p class="text-base-content/55">Autor · registro no INPI</p>
+          <p class="text-base-content/65">Autor · registro no INPI</p>
           <h3 class="mt-2 text-titulo-de-projeto font-medium">Ciframento</h3>
           <p class="mt-5 max-w-[46ch] text-destaque text-base-content/80">
             Cifra que acompanha a música em tempo real, com IA local e sem internet. Resolve a leitura de cifras durante apresentações, sem custo
@@ -39,7 +39,7 @@ export function Ciframento(): JSX.Element {
             </FichaTecnica>
           </div>
           <a
-            href="https://ciframento-v08.vercel.app/"
+            href="https://www.ciframento.maquinadomundo.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             class="mt-10 inline-flex items-center gap-2 rounded-full bg-base-content px-5 py-2.5 text-[0.95rem] font-medium text-base-100 transition-opacity hover:opacity-85"
@@ -51,7 +51,7 @@ export function Ciframento(): JSX.Element {
 
         <figure class="mx-auto w-full max-w-[22rem] lg:col-span-4 lg:col-start-8">
           <VideoDeDemonstracao />
-          <figcaption class="mt-3 text-sm text-base-content/55">Gravação real, no celular e no computador ao mesmo tempo.</figcaption>
+          <figcaption class="mt-3 text-sm text-base-content/65">Gravação real, no celular e no computador ao mesmo tempo.</figcaption>
         </figure>
 
         <div class="hidden lg:col-span-12 lg:mt-6 lg:block">

@@ -6,6 +6,7 @@ export function ProjetoEmDestaque(props: {
   nome: string;
   papel: string;
   imagem: string;
+  variantesDaImagem?: string;
   descricaoDaImagem: string;
   enquadramentoDaImagem?: string;
 }): JSX.Element {
@@ -13,6 +14,8 @@ export function ProjetoEmDestaque(props: {
     <a href={props.ancora} class="group relative block aspect-[4/3] overflow-hidden rounded-lg bg-base-200 sm:aspect-[3/4]">
       <img
         src={props.imagem}
+        srcset={props.variantesDaImagem}
+        sizes={props.variantesDaImagem ? "(min-width: 640px) 60vw, 100vw" : undefined}
         alt={props.descricaoDaImagem}
         loading="lazy"
         class={`absolute inset-0 size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04] ${props.enquadramentoDaImagem ?? ""}`}

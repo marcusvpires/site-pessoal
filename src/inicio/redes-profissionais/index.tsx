@@ -9,17 +9,17 @@ export function RedesProfissionais(): JSX.Element {
   return (
     <ul class="flex flex-wrap gap-x-8 gap-y-3 [&_a]:inline-flex [&_a]:items-center [&_a]:gap-2 [&_a]:transition-colors [&_a:hover]:opacity-75">
       <li>
-        <a href="https://www.linkedin.com/in/m4rcusvinicius/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/m4rcusvinicius/" target="_blank" rel="me noopener noreferrer">
           <LogoDeTecnologia svg={logoLinkedin} nome="LinkedIn" />
         </a>
       </li>
       <li>
-        <a href="https://github.com/marcusvpires" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/marcusvpires" target="_blank" rel="me noopener noreferrer">
           <LogoDeTecnologia svg={logoGithub} nome="GitHub" />
         </a>
       </li>
       <li>
-        <a href="http://lattes.cnpq.br/3468743778197473" target="_blank" rel="noopener noreferrer">
+        <a href="http://lattes.cnpq.br/3468743778197473" target="_blank" rel="me noopener noreferrer">
           <GraduationCap class="size-[1.1em]" aria-hidden="true" />
           Lattes
         </a>

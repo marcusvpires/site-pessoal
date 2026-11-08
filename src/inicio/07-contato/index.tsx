@@ -30,8 +30,8 @@ export function Contato(): JSX.Element {
         </div>
 
         <div class="mt-24 flex flex-wrap justify-between gap-3 border-t border-white/15 pt-6 text-sm text-white/55">
-          <span>Marcus Vinícius Almeida Pires</span>
-          <span>Engenharia de Controle e Automação, UTFPR · Curitiba, PR</span>
+          <span>© 2026 Marcus Vinícius Almeida Pires. Todos os direitos reservados.</span>
+          <span>Este site não usa cookies nem coleta dados de navegação.</span>
         </div>
       </div>
     </footer>

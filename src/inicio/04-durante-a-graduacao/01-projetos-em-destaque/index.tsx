@@ -18,7 +18,8 @@ export function ProjetosEmDestaque(): JSX.Element {
             ancora="#radreader"
             nome="RADreader"
             papel="Sistema de controle · bolsa CNPq"
-            imagem="/fotos/ic-marcus-e-christian-isssd-2025.jpg"
+            imagem="/fotos/ic-marcus-e-christian-isssd-2025.webp"
+            variantesDaImagem="/fotos/ic-marcus-e-christian-isssd-2025-800.webp 800w, /fotos/ic-marcus-e-christian-isssd-2025.webp 1600w"
             descricaoDaImagem="Marcus e Christian no XXV International Symposium on Solid State Dosimetry"
             enquadramentoDaImagem="object-[28%_50%]"
           />
@@ -26,7 +27,8 @@ export function ProjetosEmDestaque(): JSX.Element {
             ancora="#crossbots"
             nome="CROSSBOTS"
             papel="Programação de robôs · 4 anos"
-            imagem="/fotos/crossbots-rcx-2024.jpg"
+            imagem="/fotos/crossbots-rcx-2024.webp"
+            variantesDaImagem="/fotos/crossbots-rcx-2024-720.webp 720w, /fotos/crossbots-rcx-2024.webp 1080w"
             descricaoDaImagem="Equipe CROSSBOTS na RCX 2024"
             enquadramentoDaImagem="object-[50%_30%]"
           />
