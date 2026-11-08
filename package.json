@@ -20,6 +20,8 @@
     "vite-plugin-solid": "^2.11.8"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.1.0",
     "lucide-solid": "^1.63.0",
     "simple-icons": "^16.36.0",
     "solid-js": "^1.9.9"

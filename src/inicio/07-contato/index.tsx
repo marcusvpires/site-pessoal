@@ -31,7 +31,7 @@ export function Contato(): JSX.Element {
 
         <div class="mt-24 flex flex-wrap justify-between gap-3 border-t border-white/15 pt-6 text-sm text-white/55">
           <span>© 2026 Marcus Vinícius Almeida Pires. Todos os direitos reservados.</span>
-          <span>Este site não usa cookies nem coleta dados de navegação.</span>
+          <span>Este site não usa cookies. As visitas são contadas de forma anônima.</span>
         </div>
       </div>
     </footer>

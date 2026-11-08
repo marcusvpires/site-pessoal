@@ -49,7 +49,7 @@ Conteúdo escrito direto no JSX. Ícones importados um a um (`lucide-solid/icons
 
 ## Privacidade, segurança e direitos
 
-- Sem cookies, sem rastreamento e sem requisições a terceiros: as fontes ficam em `public/fontes/`. Se algum serviço externo entrar (análise de acesso, fontes, vídeos), revisar a frase do rodapé e o `Content-Security-Policy`.
+- Sem cookies e sem requisições a terceiros: as fontes ficam em `public/fontes/`. Visitas contadas pelo Vercel Web Analytics e tempo de carregamento medido pelo Vercel Speed Insights (`inject()` e `injectSpeedInsights()` em `src/index.tsx`), sem cookies e sem identificar o visitante; os scripts vêm do próprio domínio (`/_vercel/insights/` e `/_vercel/speed-insights/`), por isso a CSP não muda. Se algum serviço externo entrar (análise de acesso, fontes, vídeos), revisar a frase do rodapé e o `Content-Security-Policy`.
 - `vercel.json`: cabeçalhos de segurança (CSP, HSTS, nosniff, Referrer-Policy, Permissions-Policy, COOP, CORP) e cache longo de `fontes/` e `assets/`.
 - A CSP só aceita o script inline de hidratação do Solid, pelo hash. O build confere o hash e falha se ele mudar (atualização do `solid-js`); a mensagem de erro traz o hash novo para colocar em `script-src`.
 - `public/404.html`: página de endereço inexistente.
