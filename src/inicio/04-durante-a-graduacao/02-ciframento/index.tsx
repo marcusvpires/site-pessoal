@@ -39,7 +39,7 @@ export function Ciframento(): JSX.Element {
             </FichaTecnica>
           </div>
           <a
-            href="https://www.ciframento.maquinadomundo.com.br/"
+            href="https://ciframento.maquinadomundo.com.br/"
             target="_blank"
             rel="noopener noreferrer"
             class="mt-10 inline-flex items-center gap-2 rounded-full bg-base-content px-5 py-2.5 text-[0.95rem] font-medium text-base-100 transition-opacity hover:opacity-85"
