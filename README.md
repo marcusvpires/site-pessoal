@@ -1,6 +1,6 @@
 # Site pessoal
 
-Perfil profissional de Marcus Vinícius Almeida Pires, em https://www.maquinadomundo.com.br/. Vite, SolidJS, Tailwind e tema do daisyUI.
+Perfil profissional de Marcus Vinícius Almeida Pires, em https://www.marcusvpires.com.br/. Vite, SolidJS, Tailwind e tema do daisyUI.
 
 <p align="center">
   <img src="print.jpg" alt="Primeira tela do site pessoal" width="820">

@@ -1,4 +1,4 @@
 Contact: mailto:marcus.vinicius.mvap@gmail.com
 Expires: 2027-11-07T00:00:00.000Z
 Preferred-Languages: pt, en
-Canonical: https://www.maquinadomundo.com.br/.well-known/security.txt
+Canonical: https://www.marcusvpires.com.br/.well-known/security.txt
